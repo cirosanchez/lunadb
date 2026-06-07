@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/csanchez/Projects/personal/lunadb/build",
+  "command": "/usr/sbin/g++ -g -std=gnu++20 -o CMakeFiles/lunadb.dir/src/main.cpp.o -c /home/csanchez/Projects/personal/lunadb/src/main.cpp",
+  "file": "/home/csanchez/Projects/personal/lunadb/src/main.cpp",
+  "output": "/home/csanchez/Projects/personal/lunadb/build/CMakeFiles/lunadb.dir/src/main.cpp.o"
+}
+]

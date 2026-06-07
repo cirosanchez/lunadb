@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/csanchez/Projects/personal/lunadb/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
