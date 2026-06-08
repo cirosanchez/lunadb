@@ -1,4 +1,7 @@
 # LunaDB
+LunaDB is named after my first dog, who has already passed away and is greatly loved and remembered by me. That's why I named my first DBMS (if i keep working on this in the future) / C++ System / Real world programming project after her, because it'll be greatly remembered in the future.
+
+
 LunaDB is my own toy database management system, not for other thing than learning C++ and DBMS concepts.
 
 I'll also practice benchmarking and paper writing maybe.
