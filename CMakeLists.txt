@@ -5,6 +5,6 @@ project(lunadb)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(lunadb
-    src/main.cpp
-)
+file(GLOB_RECURSE ALL_SOURCES src/*.cpp include/*.hpp)
+
+add_executable(lunadb ${ALL_SOURCES})
