@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lunadb.dir/link.d"
+  "CMakeFiles/lunadb.dir/src/db.cpp.o"
+  "CMakeFiles/lunadb.dir/src/db.cpp.o.d"
   "CMakeFiles/lunadb.dir/src/main.cpp.o"
   "CMakeFiles/lunadb.dir/src/main.cpp.o.d"
   "lunadb"

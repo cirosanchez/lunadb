@@ -1,1 +1,7 @@
 .cache
+build/.cmake
+buiild/CMakeFiles
+build/Makefile
+build/CMakeCache.txt
+build/cmake_install.cmake
+

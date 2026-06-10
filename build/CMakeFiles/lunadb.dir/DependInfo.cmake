@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/csanchez/Projects/personal/lunadb/src/db.cpp" "CMakeFiles/lunadb.dir/src/db.cpp.o" "gcc" "CMakeFiles/lunadb.dir/src/db.cpp.o.d"
   "/home/csanchez/Projects/personal/lunadb/src/main.cpp" "CMakeFiles/lunadb.dir/src/main.cpp.o" "gcc" "CMakeFiles/lunadb.dir/src/main.cpp.o.d"
   "" "lunadb" "gcc" "CMakeFiles/lunadb.dir/link.d"
   )

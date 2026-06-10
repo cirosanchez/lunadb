@@ -1,1 +1,1 @@
-/usr/sbin/c++ -Wl,--dependency-file=CMakeFiles/lunadb.dir/link.d CMakeFiles/lunadb.dir/src/main.cpp.o -o lunadb
+/usr/sbin/c++ -g -Wl,--dependency-file=CMakeFiles/lunadb.dir/link.d CMakeFiles/lunadb.dir/src/db.cpp.o CMakeFiles/lunadb.dir/src/main.cpp.o -o lunadb

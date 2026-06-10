@@ -129,6 +129,30 @@ lunadb/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lunadb.dir/build.make CMakeFiles/lunadb.dir/build
 .PHONY : lunadb/fast
 
+src/db.o: src/db.cpp.o
+.PHONY : src/db.o
+
+# target to build an object file
+src/db.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lunadb.dir/build.make CMakeFiles/lunadb.dir/src/db.cpp.o
+.PHONY : src/db.cpp.o
+
+src/db.i: src/db.cpp.i
+.PHONY : src/db.i
+
+# target to preprocess a source file
+src/db.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lunadb.dir/build.make CMakeFiles/lunadb.dir/src/db.cpp.i
+.PHONY : src/db.cpp.i
+
+src/db.s: src/db.cpp.s
+.PHONY : src/db.s
+
+# target to generate assembly for a file
+src/db.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lunadb.dir/build.make CMakeFiles/lunadb.dir/src/db.cpp.s
+.PHONY : src/db.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lunadb"
+	@echo "... src/db.o"
+	@echo "... src/db.i"
+	@echo "... src/db.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
