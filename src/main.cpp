@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ostream>
 #include <string>
 #include <string_view>
 #include "../include/db.hpp"
@@ -46,7 +47,9 @@ int main() {
             continue;
         }
 
-        executor.execute_operation(op.value());
+        std::string result = executor.execute_operation(op.value());
+
+        std::cout << result << std::endl;
     }
 
     return 0;
