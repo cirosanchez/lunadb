@@ -1,3 +1,0 @@
-/home/csanchez/Projects/personal/lunadb/build/CMakeFiles/lunadb.dir
-/home/csanchez/Projects/personal/lunadb/build/CMakeFiles/edit_cache.dir
-/home/csanchez/Projects/personal/lunadb/build/CMakeFiles/rebuild_cache.dir
