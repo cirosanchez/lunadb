@@ -4,14 +4,9 @@ using namespace lunadb;
 using namespace std;
 
 optional<Operation> Parser::parse(std::vector<std::string> split_command) {
-
-    for (string &str : split_command) {
-        for (char &c : str) {
-        c = std::toupper(c);
-        }
-    }
-
     string command = split_command.at(0);
+
+    for (auto & c: command) c = toupper(c);
 
     // GET KEY, size must be 2.
     if (command == "GET") {
