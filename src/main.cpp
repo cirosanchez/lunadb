@@ -5,36 +5,46 @@
 #include "../include/parser.hpp"
 #include "../include/operation.hpp"
 
+using namespace lunadb;
 
 int main() {
 
     std::cout << "Welcome to LunaDB!" << std::endl;
     std::cout << "Check github.com/cirosanchez/lunadb for more info." << std::endl;
 
-    lunadb::Database db;
-    lunadb::Parser parser;
+    Database db;
+    Parser parser;
 
     bool isRunning = true;
 
     while (isRunning) {
+        // Get input
         std::string input;
         std::getline(std::cin, input);
 
-        auto op = parser.parse(input);
-
-        if (!op) {
-            std::cout << "Invalid command" << std::endl;
+        if (input.empty()) {
             continue;
         }
 
-        switch (op->type) {
-            case lunadb::OperationType::Get: std::cout << "OP TYPE -> " << "Get" << std::endl; break;
-            case lunadb::OperationType::Set: std::cout << "OP TYPE -> " << "Set" << std::endl; break;
-            case lunadb::OperationType::Remove: std::cout << "OP TYPE -> " << "Remove" << std::endl; break;
-        }   
+        // Split the string into a vector of it's components to separate command and arguments/parameters.
+        std::stringstream ss(input);
 
-        // TODO: fix set, to force 2 arguments, key and value. might be worth making Parser::parse(array of already split string).
-        // funcitonal parser, great cpp though
+        std::vector<std::string> command;
+        std::string token;
+
+        while (std::getline(ss, token, ' ')) {
+            command.push_back(token);
+        }
+        
+        // Pass the new split command to the Parser to get an Operation object.
+        auto op = parser.parse(command);
+
+        if (!op.has_value()) {
+            std::cout << "Skipping iteration..." << std::endl;
+            continue;
+        }
+
+        std::cout << "Operation key -> " << op->key << std::endl;
     }
 
     return 0;

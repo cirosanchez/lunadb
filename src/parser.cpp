@@ -55,7 +55,7 @@ optional<Operation> Parser::parse(std::vector<std::string> split_command) {
         return Operation{OperationType::Remove, split_command.at(1), " "};
     }
 
-    std::cout << "Unrecognized command -> " << command << std::endl;
+    cout << "Unrecognized command -> " << command << std::endl;
 
-    return nullopt;
+    return std::nullopt;
 }
