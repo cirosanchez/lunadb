@@ -1,4 +1,4 @@
 .cache
 build
-rebuild.sh
+rebuild_n_run.sh
 
