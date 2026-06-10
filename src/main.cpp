@@ -4,6 +4,7 @@
 #include "../include/db.hpp"
 #include "../include/parser.hpp"
 #include "../include/operation.hpp"
+#include "../include/executor.hpp"
 
 using namespace lunadb;
 
@@ -14,6 +15,7 @@ int main() {
 
     Database db;
     Parser parser;
+    Executor executor(db);
 
     bool isRunning = true;
 
@@ -44,7 +46,7 @@ int main() {
             continue;
         }
 
-        std::cout << "Operation key -> " << op->key << std::endl;
+        executor.execute_operation(op.value());
     }
 
     return 0;
