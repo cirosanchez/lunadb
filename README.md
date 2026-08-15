@@ -19,6 +19,8 @@ For LunaDB, I will follow a milestone-based roadmap:
 - SET, GET and DELETE operations
 - all single threaded
 
-### Milestone 2: Persistence (somehow)
+### Milestone 2: Multi-threading
+- Latching vs. Locking
+- Try different approaches and measure some numbers
 
 ### Milestone 3: Maybe logging???
